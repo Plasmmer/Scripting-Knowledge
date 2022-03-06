@@ -1,0 +1,5 @@
+Load function from external file:
+If you are in another path you can't leave:
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )" #at the begin of your script
+. "$SCRIPTPATH/./function_functionname.sh"
+Example on this: Personal Issues' issue-listing.sh and its function_process_issues.sh

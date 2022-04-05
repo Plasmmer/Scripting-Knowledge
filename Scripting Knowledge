@@ -6,3 +6,5 @@ Example on this: Personal Issues' issue-listing.sh and its function_process_issu
 
 Stage only deleted files with git add: git ls-files --deleted | xargs git add
 https://stackoverflow.com/a/45959365/5623661
+
+remove latest commit but keep working tree untouched: git reset HEAD~

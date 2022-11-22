@@ -28,3 +28,5 @@ question_one
 if [ "$1" = "--version" ] || [ "$1" = "-v" ]; then
    echo -e "$versionshow ($layer layer) - $year"
 fi
+
+if [[ "$(xdotool search --name "Welcome to Firedoge")" = "" ]];then (firedoge -new-tab -url file:///usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html &) fi

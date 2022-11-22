@@ -13,3 +13,9 @@ remove latest commit but keep working tree untouched: git reset HEAD~
  | tr -d \" (remove a quote) https://stackoverflow.com/questions/4248905/remove-quotes-with-sed/4249363#comment123363338_4249363
  | tr -d \' (remove a quote) https://stackoverflow.com/questions/4248905/remove-quotes-with-sed/4249363#comment123363338_4249363
  | tr '\n' ' ' (replace a newline to another character) https://unix.stackexchange.com/a/26798/470623
+ 
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+cd "$SCRIPTPATH"
+
+all=$(echo -e "" && stat "$file" && echo "IPFS hash: $(ipfs add -q --only-hash "$file")" && echo -e "------------------------------")
+printf "$all"

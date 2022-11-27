@@ -1,0 +1,13 @@
+example bash:
+/home/daniell/Desktop/online/install.sh is the most modern; should be followed
+c2exports/scripts/status\ server/tt.sh: the first to have "if" in one line, together with /home/daniell/Desktop/online/online
+/media/daniell/B/git/Floflis/shexec/shit: validates text characters; have the most detailed README.md in terms of install
+Personal Issues/Issues Editor's /scripts/function_process_issues.sh is an example at looping into every line of output (while IFS="" read -r p || [ -n "$p" ])
+Floflis Central's get-c2-proj-addons.sh is an example at reading only a specific line of output
+-
+example readme.md:
+shexec and online
+shexec and mlq now have the most complete README.md; flagships
+No such file or directory. Installation has failed. (by-url installers aren't done)
+-
+https://superuser.com/a/31919/1619518 (notifications)

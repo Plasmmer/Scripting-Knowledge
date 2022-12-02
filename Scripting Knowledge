@@ -30,3 +30,13 @@ if [ "$1" = "--version" ] || [ "$1" = "-v" ]; then
 fi
 
 if [[ "$(xdotool search --name "Welcome to Firedoge")" = "" ]];then (firedoge -new-tab -url file:///usr/lib/floflis/browser/firedoge/defaults/firstpage/index.html &) fi
+
+get extension of the file requested in command
+script_name="$(basename "$1")"
+if [ "$(echo ${script_name##*.})" = "nu" ]; then
+   gnome-terminal --tab --title="Nu Script Handler" -- /bin/nu -c "nu $1; exec nu"
+else
+   echo "---- Nu Script Handler ----"
+   echo "The file you tried to open isn't a nu script."
+   echo "Nu scripts are .nu files."
+fi
